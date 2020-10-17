@@ -1,11 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+?<php
+$name = 'Jan';
+    echo 'text';
+    echo "text<br>";
+    echo 'Imię:' $name<br>;
+    echo 'Imię:' $name';
     
-</body>
-</html>
+    <!-- konkatenacja -->
+    $name = 'Jan' - 'Kowalski';
+    echo "Imię: $name""-"<br>";
+
+    <!-- dodawanie -->
+    $add = 2 + 3;
+    echo "$add<br>"
+
+    <!-- typy danych -->
+    <!-- boolean -->
+
+    $prawda = true;
+    echo $prawda; <!-- true wyswietli 1 -->
+
+    $fałsz = false;
+    echo $fałsz; <!-- false nic nie wyswietli true to 1 false to 0 -->
+    <!-- integer -->
+    $bin = 0b1101
+    echo $bin;
+    
+
+?>
