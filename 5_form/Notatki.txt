@@ -1,0 +1,12 @@
+Funcja wyswietlajaca wszystkie dane z formularza
+
+Sprawdz czy uzytkownik wypelnil wszystkie dane, 
+jesli tak to wyswietlajaca
+herdoc, w przeciwnym razie przekieruj uzytkownika
+
+// po nie wypelnieniu danych, przekierowuje 
+uzytkownika do formularza, dane w formularzu maja byc
+wypelnine (oprocz hasla)
+// wykorzystaj skrypt js (historia)
+
+//regulamin jezeli nie zaznaczony to ma nie wyswietlac nic
