@@ -25,8 +25,8 @@
     if(!empty($_GET['name'])&& !empty($_GET['surname']) &&
      !empty($_GET['password'])&& !empty($_GET['zipcode'])&&!empty($_GET['zipcode2'])&&
      !empty($_GET['color'])&& !empty($_GET['statute'])){
-         $color=$_GET['color'];
-
+        $color=$_GET['color'];
+        $name =$_GET['name'];
     switch($color){
         case 'r':
             $color ='czerwony';
@@ -47,7 +47,7 @@
         Kolor: $color<br>
         T;
 
-        echo '<a href="./1_form.php?historyBack">"Popraw dane w formularzu"</a>';
+        echo "<a href=\"./1_form.php?name=$name.\">\Popraw dane w formularzu\</a>";
     }else{
         //echo 'Nie wprowadzono wszystkich danych';
         //header('Location: ./1_form.php');

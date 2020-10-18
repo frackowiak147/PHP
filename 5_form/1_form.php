@@ -8,6 +8,22 @@
 <body>
     <h4>Formularz z danymi użytkownika</h4>
     <form action="./1_form_data.php" method="get">
+        <?php
+            if(!empty($_GET['surname'])){
+                $surname = $_GET['surname'];
+                echo'<input type="text" surname="surname" placeholder="Nazwisko">';
+            }else{
+                echo '<input type="text" name="surname" placeholder="Nazwisko:>';
+            }
+            if($_GET['checkbox'].checked = true);
+            {
+                $_GET['checkbox'].checked = "checked";
+            }else{
+                $_GET['checkbox'].checked = false;
+            } 
+
+        ?>
+        <br><br>
         <input type="text" name="name" placeholder="Imie"><br><br>
         <input type="text" name="surname" placeholder="Nazwisko"><br><br>
         <input type="password" name="password" placeholder="Haslo"><br><br>
