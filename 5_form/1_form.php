@@ -14,12 +14,6 @@
                 echo'<input type="text" surname="surname" placeholder="Nazwisko">';
             }else{
                 echo '<input type="text" name="surname" placeholder="Nazwisko:>';
-            }
-            if($_GET['checkbox'].checked = true);
-            {
-                $_GET['checkbox'].checked = "checked";
-            }else{
-                $_GET['checkbox'].checked = false;
             } 
 
         ?>
