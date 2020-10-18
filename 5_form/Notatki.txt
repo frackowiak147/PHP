@@ -10,3 +10,21 @@ wypelnine (oprocz hasla)
 // wykorzystaj skrypt js (historia)
 
 //regulamin jezeli nie zaznaczony to ma nie wyswietlac nic
+
+Zadanie
+Dodaj dwa pola:
+Miasto (pole tekstowe)
+Wiek
+Przycisk
+
+Utworz plik o nazwie: ex_1.bhp
+A w nim formularz o nazwie rom_ex
+Po zatwierdzeniu formularza wyswietl wynik na stronie ex_1_data.php
+Dane wyswietl w formacie:
+
+Miasto: ...
+Wiek: ...
+
+Sprawdz czy wszytkie pola zostaly wypelnione. Jesli nie 
+To uzytkownik zostanie przekierowany do strony z formularzem i wyswietli mu stie 
+komunikat o tresci: " Wypelnij wszystkie pola Dane, ktore wczesniej wprowadzil

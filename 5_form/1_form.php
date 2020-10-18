@@ -7,15 +7,18 @@
 </head>
 <body>
     <h4>Formularz z danymi użytkownika</h4>
-    <form action="./1_form_data.php" method="get">
+    <form name=form1 action="./1_form_data.php" method="get">
+    
         <?php
+        //print_r($_GET) do analizy 
+        ///*
             if(!empty($_GET['surname'])){
                 $surname = $_GET['surname'];
-                echo'<input type="text" surname="surname" placeholder="Nazwisko">';
+                echo"<input type=\"text\" surname=\"surname\" placeholder=\"Nazwisko\" value=\$surname\"";
             }else{
-                echo '<input type="text" name="surname" placeholder="Nazwisko:>';
+                echo '<input type="text" surnamename="surname" placeholder="Nazwisko:>';
             } 
-
+            //*/
         ?>
         <br><br>
         <input type="text" name="name" placeholder="Imie"><br><br>
@@ -30,8 +33,17 @@
         <input type="radio" name="color" value="g" checked>Zielony
         <input type="radio" name="color" value="b" checked>Niebieski<br>
         <input type="checkbox" name="statute">Regulamin<br><br>
+        <?php
+    switch ($_GET['color']){
+        case 'r':
+            //uzupełnic screeen shoota 6
+        ?>
+    }
+<script>
+    document.form1.elements['b'].checked = true;
+</script>
+<input type="submit" value="Wyślij dane">
 
-        <input type="submit" value="Wyślij dane">
     </form>
 </body>
 </html>
