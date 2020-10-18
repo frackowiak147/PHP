@@ -6,23 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-<form action="./form_ex.php" method="get">
-    <input type="text" name="miasto" placeholder="Miasto"><br><br>
-    <input type="text" name="wiek" placeholder="Wiek"><br><br>
+<form name=form_ex action="./form_ex.php" method="get">
+    <input type="text" name="miasto" placeholder="miasto"><br><br>
+    <input type="text" name="wiek" placeholder="wiek"><br><br>
 
     <?php 
-$miasto = "<input type=\"text\" name=\"name\"";
-    if(!empty($_GET['miasto'])){
+$miasto = "<input type=\"text\" miasto=\"miasto\"";
+$wiek = "<input type=\"text\" wiek=\"wiek\"";
+
+    if(!empty($_GET['miasto'])&& !empty($_GET['wiek'])){
         $miasto .=" value=\"$_GET[miasto]\">";
         $wiek .=" value=\"$_GET[wiek]\">";
     }else{
         $miasto .=" placeholder=\"miasto\">";
         $wiek .=" placeholder=\"wiek\">";
     }
-    echo $miasto;
-    echo $wiek;
     ?>
-<br><br>
+<br>
 <input type="submit" value="Wyślij">
 </form>
 </body>

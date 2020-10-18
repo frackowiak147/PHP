@@ -8,8 +8,22 @@
 <body>
     <?php
         $miasto = $_GET['miasto'];
-        echo "Miasto:  $miasto<br>";
-        echo "<a href=\"./form_ex.php?miasto=$_GET[miasto].\">\Popraw dane w formularzu\</a>";
+        $wiek = $_GET['wiek'];
+
+        if(!empty($miasto)&& !empty($wiek)){
+            echo "Miasto: $miasto<br>";
+            echo "Wiek:  $wiek<br>";
+        }
+        else{
+
+            echo "<a href=\"./form_ex.php?miasto=$miasto.\">\Popraw dane w formularzu\</a><br>";
+            echo "<a href=\"./form_ex.php?wiek=$wiek.\">\Popraw dane w formularzu\</a>";
+        ?>
+            <script>
+                history.back()
+            </script>
+        <?php
+        }
         
 
     ?>

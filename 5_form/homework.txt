@@ -1,0 +1,12 @@
+Użytkonik podaje z klawiatury dwie długości
+do wyboru w poolu radio ma "pole" i "obwód"
+domyślnie zaznaczone ma być "pole".
+
+Zabezpiecz formularz przed podaniem pustych danych.
+Wynik wyswietl w formacie:
+Pole wynosi: 20cm2
+Obwód wynosi: 20cm2
+Gorny index!
+
+Dane wyślij z formularza bezpipecznie (POST) NIE GET!
+Obliczenia mają być widoczne w innym pliku.
