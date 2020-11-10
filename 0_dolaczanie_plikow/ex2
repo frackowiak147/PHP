@@ -1,0 +1,7 @@
+Dodaj na stronie 4_funkcje.php formularz z imieniem i nazwiskiem, kolor (pole typu kolor)
+Po zatwierdzeniu danych wywołaj funjche z pliku
+2_function.php (3 parametry), wcześniej sprawdzając czy dane zostały poprawnie wypełnione
+
+Wyswietl wynik pobrany z funkcji w formacie :
+Imię i nazwisko: np. Jan Nowak
+Kolr:  np.# AA1122

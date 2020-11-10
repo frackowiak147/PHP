@@ -1,0 +1,5 @@
+Dodaj na stronie 3_funkcje.php formularz z imieniem i nazwiskiem
+Po zatwierdzeniu danych wywołaj funjche z pliku
+2_function.php, wcześniej sprawdzając czy dane zostały poprawnie wypełnione
+
+Wyswietl wynik pobrany z funkcji
