@@ -1,0 +1,98 @@
+<?php 
+  session_start();
+  if (!isset($_SESSION['result'])) {
+    $_SESSION['result'] = 0;
+  }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <h2>Kalkulator:</h2>
+    <?php
+        function add($a, $b){
+        return $a+$b;
+        }
+
+        function minus($a, $b){
+        return $a-$b;
+        }
+        function multi($a, $b){
+            return $a*$b;
+        }
+        function divi($a,$b){
+            return $a/$b;
+        }
+
+    /* Sprawdzenie działanie funkcji
+    $a=6;
+    $b=5;
+
+    echo add($a,$b),'<br>';
+    echo minus($a,$b), '<br>';
+    echo multi($a,$b),'<br>';
+    echo divi($a,$b),'<br>';
+    */
+    ?>
+    <form action="" method="post">
+    <input type="number" name="a" value="0">
+    
+    <select name="dzialanie">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    </select>
+    <input type="number" name="b" value="0">
+    <input type="submit" name="button" value="=">
+    <input type="text" name="wynik" id="wynik" value="<?php 
+     if(isset($_POST['dzialanie'])){
+      
+      $opcja = $_POST['dzialanie'];
+      $a=$_POST['a'];
+      $b=$_POST['b'];
+      
+      switch ($opcja) {
+          case '+':
+              //echo '<br>Wybrano dodawanie<br>';
+              
+              $_SESSION['result'] = add($a,$b);
+              echo $_SESSION['result'];
+              
+              break;
+          case '-':
+              //echo 'Wybrano odejmowanie';
+              $_SESSION['result'] = minus($a,$b);
+              echo $_SESSION['result'];
+              break;
+          case '*':
+              //echo 'Wybrano mnożenie';
+              $_SESSION['result'] = multi($a,$b);
+              echo $_SESSION['result'];
+              break;
+          case '/':
+              //echo 'Wybrano dzielenie';
+              $_SESSION['result'] = divi($a,$b);
+              echo $_SESSION['result'];
+              break; 
+          default:
+           $_SESSION['result']=0;
+           echo $_SESSION['result'];
+              break;
+            }
+      
+  }
+    ?>" disabled><br><br>
+    <br>
+    <input type="button" value = "Reset" onclick="<?php 
+    $_SESSION['result']=0;
+    echo $_SESSION['result'];
+    ?>">
+    </form>
+    <br><br>
+</body>
+</html>
